@@ -12,7 +12,7 @@ A keyboard-first English trainer. Every item (a word, a collocation, a sentence)
 
 Progress (mastered / weak / streaks, favourites, daily counts, where you stopped) is kept per item and you resume exactly where you left off. Unpractised items come first; optional words in brackets, e.g. `encourage (the) development (of)`, are accepted either way.
 
-Built-in content: PTE academic vocabulary (AWL word families + ACL collocations) and 780 everyday American English sentences in 39 scenes. See `CONTENT-LICENSE.md`.
+Built-in content: PTE (AWL word families, ACL collocations, WFD high-frequency words), IELTS / TOEFL / GRE core vocabulary with phonetics and example sentences, and 780 everyday American English sentences in 39 scenes. See `CONTENT-LICENSE.md` for sources.
 
 ## Run it locally (no dependencies)
 ```bash

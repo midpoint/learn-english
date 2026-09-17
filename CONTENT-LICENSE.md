@@ -10,4 +10,9 @@ The code in this repository is MIT-licensed (see `LICENSE`). The learning conten
 
 Chinese glosses on the AWL/ACL entries were added for this project and are CC BY 4.0.
 
-Not included on purpose: exam word books (IELTS/TOEFL/GRE from commercial publishers) and PTE 机经 question banks. They are copyrighted. Use `scripts/import_youdao.py` / `scripts/import_jijing.py` to convert your own copies locally, or import them in the browser (Settings → 导入词库) — imported decks stay in your browser and are never uploaded.
+| `ielts/ielts.json`, `toefl/toefl.json`, `gre/gre.json` — exam core vocabulary | Converted from the word books distributed with Youdao Dictionary (index: [kajweb/dict](https://github.com/kajweb/dict)) using `scripts/import_youdao.py` | Word selection, glosses and example sentences belong to their original publishers; included for personal study only, not covered by the MIT or CC licenses |
+| `pte/wfd.json` — PTE Write-From-Dictation high-frequency words | Community-compiled list | Same as above |
+
+If you are a rights holder and want any of this material removed, open an issue and it will be taken down.
+
+PTE 机经 question banks and similar paid materials are not included. Use `scripts/import_jijing.py` to convert your own copy locally, or import it in the browser (Settings → 导入词库) — imported decks stay in your browser and are never uploaded.
