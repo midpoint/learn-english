@@ -1,0 +1,35 @@
+# Learn English — type it, spell it, hear it
+
+**Live: https://learn-english.nolanzhao.workers.dev**
+
+A keyboard-first English trainer. Every item (a word, a collocation, a sentence) can be practised three ways:
+
+| Mode | What you do |
+|---|---|
+| 看题打字 Type | The text is shown in light grey; type it letter by letter, mistakes turn red |
+| 看中文拼写 Spell | Only the Chinese meaning (and phonetics) is shown; spell the English |
+| 听写 Dictation | Hear it, type it |
+
+Progress (mastered / weak / streaks, favourites, daily counts, where you stopped) is kept per item and you resume exactly where you left off. Unpractised items come first; optional words in brackets, e.g. `encourage (the) development (of)`, are accepted either way.
+
+Built-in content: PTE academic vocabulary (AWL word families + ACL collocations) and 780 everyday American English sentences in 39 scenes. See `CONTENT-LICENSE.md`.
+
+## Run it locally (no dependencies)
+```bash
+git clone https://github.com/nolanzhao/learn-english
+cd learn-english
+python3 serve.py          # http://127.0.0.1:8766
+```
+Python 3.8+ standard library only. Progress stays in your browser.
+
+## Shortcuts
+Enter submit · Esc skip · Tab / ⌘S favourite · ⌘← ⌘→ previous / next item · ⌘B sidebar · ⌘. focus mode
+
+## Optional: accounts and cloud sync
+The same front-end can run on a Cloudflare Worker with D1 for email (magic link + code) / Google / Microsoft / GitHub login and cross-device progress sync. Login only appears when a method is configured. See `docs/DEPLOY.md`.
+
+## Stack
+Plain HTML/CSS/JS, no framework, no build step for the page. Backend (optional): Hono + Better Auth + Drizzle on Cloudflare Workers/D1.
+
+## License
+Code: MIT. Content: see `CONTENT-LICENSE.md`.
