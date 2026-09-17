@@ -22,6 +22,16 @@ python3 serve.py          # http://127.0.0.1:8766
 ```
 Python 3.8+ standard library only. Progress stays in your browser.
 
+## Add your own decks — let an AI assistant do it
+Open this repo in Claude Code, Cursor, Codex or any coding assistant and say what you have:
+
+> 把 ~/Downloads/words.txt 做成一个词库，放到雅思课程里
+> Turn this Qwerty Learner dictionary into a deck · Write 20 sentences about renting an apartment
+
+The assistant follows **[`.claude/skills/add-deck/SKILL.md`](.claude/skills/add-deck/SKILL.md)** — deck format, where files go, converters for common sources, and a validator to check the result. Claude Code picks the skill up automatically; for other tools, tell them to read that file first.
+
+Doing it by hand? See [`CONTRIBUTING.md`](CONTRIBUTING.md). Copyrighted or personal material belongs in `content/private/` (git-ignored, never published).
+
 ## Shortcuts
 Enter submit · Esc skip · Tab / ⌘S favourite · ⌘← ⌘→ previous / next item · ⌘B sidebar · ⌘. focus mode
 

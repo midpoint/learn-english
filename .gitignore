@@ -7,3 +7,4 @@ content/*/.private
 *.log
 .DS_Store
 promo/
+content/private/
