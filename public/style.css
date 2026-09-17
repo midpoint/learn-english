@@ -183,7 +183,7 @@ body.side-open .side{transform:none}
 .side-foot{padding:12px 18px 16px;border-top:1px solid var(--glass-line);font-size:12px;color:var(--ink-3)}
 .side-foot b{color:var(--ink);font-weight:600}
 .backdrop{position:fixed;inset:0;z-index:7;background:oklch(0% 0 0/.25);opacity:0;pointer-events:none;transition:opacity .25s}
-@media (min-width:900px){ body.side-open .page{margin-left:272px;max-width:calc(1080px + 272px);padding-left:clamp(24px,4vw,56px)} }
+@media (min-width:900px){ body.side-open{padding-left:272px} body.side-open .page{margin:0 auto} }
 @media (max-width:899px){ body.side-open .backdrop{opacity:1;pointer-events:auto} }
 
 /* ===== 音标 / 例句 ===== */
@@ -221,7 +221,7 @@ body.side-open .side{transform:none}
 body.focus .unfocus{display:inline-flex}
 body.focus .menu,body.focus header,body.focus .settings,body.focus .quick,body.focus .round,body.focus .context,body.focus footer,body.focus .deckbar,body.focus .review{display:none!important}
 body.focus .wordbar button:not(.mic),body.focus .wordbar .navhint{display:none}
-body.focus .page{margin-left:0;max-width:1080px;padding-top:0}
+body.focus .page{margin:0 auto;max-width:1080px;padding-top:0}
 body.focus .stage{min-height:calc(100vh - 40px);padding:0}
 body.focus .word{margin-top:0}
 
