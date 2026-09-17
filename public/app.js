@@ -157,7 +157,8 @@ const isWeak=id=>{const r=rec(id);return r.w>0&&r.streak<2};
 const segVal=id=>$(id).dataset.value;
 const mode=()=>segVal('mode');
 function setSeg(id,v){ $(id).dataset.value=v; $(id).querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v===v)); }
-const realItem=k=>{const [dd,i]=k.split(':'); const d=DECKS[dd]; return d&&!d.virtual&&d.items[+i]?{deck:dd,idx:+i,it:d.items[+i]}:null;};
+// 词库按课程懒加载: 其他课程的词库 items 还是 null, 错题/收藏里引用到它们时要跳过, 不能直接取下标
+const realItem=k=>{const [dd,i]=k.split(':'); const d=DECKS[dd]; return d&&!d.virtual&&d.items&&d.items[+i]?{deck:dd,idx:+i,it:d.items[+i]}:null;};
 
 function allItems(d){
   if(d==='fav') return Object.keys(S.fav).filter(k=>S.fav[k]).map(realItem).filter(x=>x&&DECKS[x.deck].course===course);
