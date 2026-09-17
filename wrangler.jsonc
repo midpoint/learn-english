@@ -7,11 +7,11 @@
   "assets": { "directory": "./public", "binding": "ASSETS", "not_found_handling": "404-page" },
   "d1_databases": [
     // 2026-09-17 已创建
-    { "binding": "DB", "database_name": "learn-english", "database_id": "c917fcbc-2b91-4df4-89fd-f12562eb2a95", "migrations_dir": "migrations" }
+    { "binding": "DB", "database_name": "alle", "database_id": "366ce74a-086c-40f9-9ff2-26dc8f62ef41", "migrations_dir": "migrations" }
   ],
   "kv_namespaces": [
     // 2026-09-17 已创建
-    { "binding": "RATE", "id": "9fb5d7711141483da8b6f4ad8a44f6c8" }
+    { "binding": "RATE", "id": "5eb78d84e654487f83f1ff81232dcb20" }
   ],
   "vars": {
     "APP_NAME": "Learn English",
