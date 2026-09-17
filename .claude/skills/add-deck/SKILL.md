@@ -23,13 +23,14 @@ Existing public courses: `pte`, `ielts`, `toefl`, `gre`, `spoken`. Prefer adding
 ## 3. Deck format
 ```json
 {
-  "id": "sp-airport-security",
-  "name": "机场安检",
+  "id": "sp-library",
+  "name": "图书馆",
   "course": "spoken",
   "order": 40,
   "kind": "sentence",
   "items": [
-    { "t": "Please take off your shoes.", "z": "请脱鞋。", "n": 1 }
+    { "t": "Can I renew this book online?", "z": "这本书可以在网上续借吗？", "n": 1 },
+    { "t": "Is there a quiet study room I can book?", "z": "有可以预约的安静自习室吗？", "n": 2 }
   ]
 }
 ```
