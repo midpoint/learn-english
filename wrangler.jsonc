@@ -15,8 +15,8 @@
   ],
   "vars": {
     "APP_NAME": "Learn English",
-    "APP_URL": "https://learn-english.nolanzhao.workers.dev",
-    "EMAIL_FROM": "Learn English <login@example.com>"
+    "APP_URL": "https://learn-english.midpoint2005.workers.dev",
+    "EMAIL_FROM": "Learn English <midpoint2005@gmail.com>"
   },
   "workers_dev": true,
   "preview_urls": false,
