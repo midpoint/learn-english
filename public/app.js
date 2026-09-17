@@ -578,7 +578,7 @@ function wire(){
 }
 function applyUi(){
   setSeg('mode',['see','spell','dict','say','read'].includes(S.ui.mode)?S.ui.mode:'see'); setSeg('order',['seq','alpha','rand','weak'].includes(S.ui.order)?S.ui.order:'seq');
-  $('showZh').checked=!!S.ui.showZh; if(S.ui.skipMastered!==undefined) $('skipMastered').checked=S.ui.skipMastered; if(S.ui.autoSpeak!==undefined) $('autoSpeak').checked=S.ui.autoSpeak; if(S.ui.autoSubmit!==undefined) $('autoSubmit').checked=S.ui.autoSubmit; if(S.ui.speakOnWrong!==undefined) $('speakOnWrong').checked=S.ui.speakOnWrong; $('soundLog').checked=!!S.ui.soundLog; if(S.ui.rate) $('rate').value=S.ui.rate;
+  $('showZh').checked=S.ui.showZh===undefined?true:!!S.ui.showZh;   // 默认显示中文 if(S.ui.skipMastered!==undefined) $('skipMastered').checked=S.ui.skipMastered; if(S.ui.autoSpeak!==undefined) $('autoSpeak').checked=S.ui.autoSpeak; if(S.ui.autoSubmit!==undefined) $('autoSubmit').checked=S.ui.autoSubmit; if(S.ui.speakOnWrong!==undefined) $('speakOnWrong').checked=S.ui.speakOnWrong; $('soundLog').checked=!!S.ui.soundLog; if(S.ui.rate) $('rate').value=S.ui.rate;
   course=(S.ui.course&&COURSES.some(c=>c.id===S.ui.course))?S.ui.course:(S.ui.deck&&DECKS[S.ui.deck]&&!DECKS[S.ui.deck].virtual?DECKS[S.ui.deck].course:COURSES[0].id);
   const ds=courseDecks(course); deck=(S.ui.deck&&DECKS[S.ui.deck]&&(DECKS[S.ui.deck].virtual||DECKS[S.ui.deck].course===course))?S.ui.deck:(ds[0]||'fav'); filter=0;
   document.body.classList.toggle('side-open', S.ui.side!==undefined?!!S.ui.side:window.innerWidth>=900);
